@@ -1,0 +1,19 @@
+var amt;
+var tax = 50;
+var amtTax=0;
+var bankBalance = 1000;
+var totalAmt=0;
+function calTax(amt) {
+    amtTax = tax + amt;
+    return amtTax
+}
+if (amtTax < bankBalance) {
+    while (amtTax < bankBalance) {
+        var phone = Number(prompt("Enter phone price :"));
+        totalAmt = Number(calTax(phone + totalAmt));
+    }
+}
+else {
+    alert("No money!!!!!!");
+    console.log(totalAmt);
+}
